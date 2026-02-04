@@ -1,4 +1,6 @@
 codechef:
+Average of n1 and n2 is strictly greater than n3.Print YES .Otherwise print NO.
+	
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -19,3 +21,13 @@ class Codechef
 	            System.out.println("NO");
 	}}
 }
+Time Complexity:
+	O(N)
+Space Complexity:O(1)
+
+Sample Input:2
+	        3 4 5
+	   		5 8 9
+sample output:
+			false
+			fasle
