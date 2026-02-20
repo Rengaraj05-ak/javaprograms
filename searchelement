@@ -1,0 +1,54 @@
+Problem:
+Give the number of array element,array elements and search element.The given esarchelement is present Print "YES" otherwise Print "NO".
+
+Soution:
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int searchelement=sc.nextInt();
+		int[] arr=new int[n];
+		int c=0;
+		for(int i=0;i<n;i++)
+		{
+		    arr[i]=sc.nextInt();
+		    if(arr[i]==searchelement)
+		          {
+		              c=1;
+		              break;
+		          }
+		          
+		}
+		if(c==1)
+		{
+		    System.out.println("YES");
+		}
+		else
+		{
+		    System.out.println("NO");
+		}
+
+	}
+}
+
+Input1:
+5
+2
+3 4 5 2 6 
+Output1:
+YES
+
+Input2:
+6 
+7
+4 5 2 3 4 8
+Output2:
+No
+
+Time Complexity:O(N)
+Space Complexity:O(N)
