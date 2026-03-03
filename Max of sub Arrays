@@ -1,0 +1,40 @@
+
+Question:
+Get the N -Number of array,'loop' can get the size of array size.Get the array values to print the maximum values in a give array.
+
+Program:
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		while(n>0)
+		{
+		    int max=0;
+	     	int loop=sc.nextInt();
+	     	int[] arr=new int[loop];
+	     	for(int j=0;j<loop;j++)
+	        {
+	            arr[j]=sc.nextInt();
+	            if(max<arr[j])
+	                  max=arr[j];
+	        }
+	        System.out.println(max);
+	        n--;
+		}
+		
+        
+
+	}
+}
+
+Input
+1
+5
+4 7 6 3 1
+Output
+7
