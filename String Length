@@ -1,0 +1,18 @@
+Question:
+Find the Last Word length of a given sentence.
+
+Program:
+class Solution {
+    public int lengthOfLastWord(String s) {
+        String[] s1=s.split(" ");
+        return s1[s1.length-1].length();
+        
+    }
+}
+
+Time Complexity:O(1)
+Space Complexity:O(n)
+
+Input: s = "Hello World"
+Output: 5
+Explanation: The last word is "World" with length 5.
