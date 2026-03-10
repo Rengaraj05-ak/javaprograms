@@ -1,0 +1,56 @@
+Question:
+Take Discount Or Not.
+Input Format The first line of input will contain a single integer T T, denoting the number of test cases.
+The description of the test cases follows. Each test case consists of two lines of input. 
+The first line of the test case contains three space-separated integers — N N, X X, and Y Y.
+The second line contains N N space-separated integers — A 1 , A 2 , … , A N A 1 ​ ,A 2 ​ ,…,A N ​ .
+
+Output Format For each test case, output COUPON if Chef should buy the discount coupon, and NO COUPON otherwise. 
+Each letter of the output may be printed in either lowercase or uppercase. For example, the strings coupon, CouPoN, and COUPON will all be treated as equivalent.
+
+Program:
+class Solution 
+{
+    public String checkCoupon(int n, int x, int y, int[] prices) {
+        int totalPrice = 0;         
+        int priceWithCoupon = 0;     
+        for(int i=0;i<n;i++)
+        {
+            totalPrice += prices[i];
+            int newPrice=prices[i]-y;
+            if(newPrice<0)
+            {
+                newPrice = 0;
+            }
+            priceWithCoupon+=newPrice;
+        }
+        priceWithCoupon=priceWithCoupon+x;
+        if(priceWithCoupon<totalPrice) 
+        {
+            return "COUPON";
+        } 
+        else
+        {
+            return "NO COUPON";
+        }
+    }
+}
+Input:
+5
+4 30 10
+15 8 22 6
+4 40 10
+15 8 22 6
+4 34 10
+15 8 22 6
+2 10 100
+60 80
+3 30 5
+50 60 50
+
+Output:
+COUPON
+NO COUPON
+NO COUPON
+COUPON
+NO COUPON
