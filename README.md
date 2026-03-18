@@ -7,3 +7,11 @@ Add the two numbers and return the sum as a linked list.
 A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
 3.Get the N -Number of array,'loop' can get the size of array size.Get the array values to print the maximum values in a give array.
+
+4.Take Discount Or Not.
+Input Format The first line of input will contain a single integer T T, denoting the number of test cases.
+The description of the test cases follows. Each test case consists of two lines of input. 
+The first line of the test case contains three space-separated integers — N N, X X, and Y Y.
+The second line contains N N space-separated integers — A 1 , A 2 , … , A N A 1 ​ ,A 2 ​ ,…,A N ​ .
+Output Format For each test case, output COUPON if Chef should buy the discount coupon, and NO COUPON otherwise. 
+Each letter of the output may be printed in either lowercase or uppercase. For example, the strings coupon, CouPoN, and COUPON will all be treated as equivalent.
