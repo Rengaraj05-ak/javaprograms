@@ -15,3 +15,7 @@ The first line of the test case contains three space-separated integers — N N,
 The second line contains N N space-separated integers — A 1 , A 2 , … , A N A 1 ​ ,A 2 ​ ,…,A N ​ .
 Output Format For each test case, output COUPON if Chef should buy the discount coupon, and NO COUPON otherwise. 
 Each letter of the output may be printed in either lowercase or uppercase. For example, the strings coupon, CouPoN, and COUPON will all be treated as equivalent.
+
+5.Get the number for user.Get the number of people and minyear to vote.if people year is greater than or equal to minyears,to count and finally display count of area peoples eligibility.
+
+6.
